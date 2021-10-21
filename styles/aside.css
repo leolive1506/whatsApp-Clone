@@ -1,0 +1,157 @@
+/* search */
+.search-contact {
+    margin: 1rem;
+    max-height: 100%;
+    text-align: center;
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.search-contact::before {
+    position: absolute;
+    content: " ";
+    height: 1px;
+    width: 100%;
+    background-color: var(--border-list);
+    top: 4rem
+}
+
+.container-search {
+    background: var(--input-area);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 3rem;
+    border-radius: 25px;
+}
+
+.container-search button,
+input[type="search"] {
+    border: none;
+    height: 90%;
+    max-width: 100%;
+    background: none;
+    outline: none;
+    color: var(--colors-p)
+}
+
+.container-search button {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+input[type="search"] {
+    max-height: 100%;
+    width: 80%;
+}
+
+
+/* CARDS */
+
+.container-aside {
+    height: 100%;
+    background-color: var(--background-cards);
+    overflow-y: auto;
+    border-right: 0.5px solid var(--cinza);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-cards);
+    height: -10rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+    height: 6px!important; 
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.16);
+    border-radius: 20px;     /*  roundness of the scroll thumb */
+    border: 3px solid var(--background-cards)
+}
+
+
+.card {
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.selected.selected {
+    background-color: var(--default-active)
+}
+
+.card:hover {
+    background-color: var(--default-hover);
+    transition: .5s;
+}
+
+.img-profile {
+    display: flex;
+    align-items: center;
+}
+
+.main-contato {
+    margin: 0.5rem 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-contato::before {
+    position: absolute;
+    content: " ";
+    height: 1px;
+    width: calc(100% + 2%);
+    background-color: var(--border-list);
+    top: 4.59rem
+}
+
+h2 {
+    text-align: start;
+    font-weight: 400;
+    color: var(--titles-contacts)
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+p {
+    font-weight: 400;
+    color: var(--colors-p)
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content:center;
+    align-items: center;
+}
+
+.detalhes small {
+    font-size: 15px;
+}
+
+div.new-msg-icon {
+    margin: 0;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,98 @@
+header {
+    grid-area: header;
+    position: relative;
+    background-color: var(--cinza-dark);
+    max-height: 100%;
+}
+
+
+.container-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "contactsProfile chatOpenTitle";
+    max-height: 100%;
+    
+}
+
+header div.contacts {
+    grid-area: contactsProfile;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.1px solid var(--cinza);
+    max-height: 100%;
+}
+
+.imgs-title {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+img.profile {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.geral {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1rem
+}
+
+.geral img {
+    margin-left: 1rem;
+}
+
+
+
+
+
+header div.chat-open-title {
+    grid-area: chatOpenTitle;
+    margin: 1rem;
+    display: flex;
+    max-height: 100%;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-title-partipantes {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-left: 1rem;
+    
+}
+
+.title-participantes {
+    margin-left: 1rem;
+    
+}
+
+ul {
+    display: flex;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.imgs-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.imgs-chat .search-chat {
+    width: 2.8rem;
+    height: 2.8rem;
+}

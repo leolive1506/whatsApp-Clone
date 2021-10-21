@@ -1,0 +1,124 @@
+main {
+    grid-area: contacts;
+    height: 100%;
+    max-height: 80vw;
+    text-align: center;
+    background-color: var(--background-chat);
+    background-image: url("../imgs/wallpapaer2.jpg");
+    overflow-y: auto
+}
+
+.msg-block {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.msg-block-2 {
+    justify-content: flex-start;
+}
+
+.msg span.number-contact {
+    display: block;
+    color: #6BCBEF;
+    margin: 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.msg {
+    margin: 0.2rem 2rem;
+    width: auto;
+    max-width: 280px;
+    text-align: start;
+    background-color: var(--cards-background);
+    padding: 0.5rem;
+    color: black;
+    border-radius: 5px;
+
+    overflow-wrap: break-word;
+}
+
+.msg-2 {
+    position: relative;
+    background-color: var(--cards-background-chat);
+}
+
+.msg-1 {
+    position: relative
+}
+.msg-1::before {
+    content: "";
+    
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: -7px;
+    top: 0;
+    border-style: solid;
+    border-width: 8px 8px 0px;
+    border-color: var(--cards-background) transparent transparent
+}
+
+.msg-2::before {
+    content: "";
+    
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: -7px;
+    top: 0;
+    border-style: solid;
+    border-width: 8px 8px 0px;
+    border-color: var(--cards-background-chat) transparent transparent
+}
+
+.answer-border {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+}
+
+.answer {
+    background-color: rgba(5, 97, 98, .5);
+
+    border-left: 5px solid #35cd96;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    
+}
+
+.msg-2 .answer {
+    border-right: 5px solid #6BCBEF;
+    border-left: none;
+    background-color: rgba(19, 28, 33, .5);
+}
+
+.container-answer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    opacity: 0.7;
+    
+}
+.answer-name {
+    color: #35cd96;
+    opacity: 1
+}
+
+.msg-2 .answer-name {
+    color: #6BCBEF
+}
+
+msg p {
+    max-width: 100%;
+    margin: 0.5rem 0.1rem;
+    color: black;
+    font-weight: 400;
+    color: var(--message-primary)
+}
+
+.answer small {
+    color: var(--colors-p)
+}

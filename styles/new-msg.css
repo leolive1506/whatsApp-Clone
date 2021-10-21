@@ -1,0 +1,38 @@
+.new-msg {
+    height: 100%;
+    background-color: var(--container-input);
+}
+
+.container-new-send{
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.text-area {
+    display: flex;
+    width: 79%;
+    border-radius: 25px;
+    background-color: var(--input-area);
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+textarea {
+    width: 90%;
+    text-align: start;
+    display: flex;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+    color: var(--cinza);
+    /* font-size: 1.2rem; */
+} 
+
+
